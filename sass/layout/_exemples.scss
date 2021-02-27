@@ -1,0 +1,76 @@
+.examples-list {
+  @extend %dis-flex;
+  flex-wrap: wrap;
+  margin-right: $double-gatter-size * -1;
+
+  margin-bottom: $double-gatter-size * -1;
+}
+.examples-list-item {
+  @include getWidth($collum-number-desktop, $double-gatter-size);
+  //   (100% - ($double-gatter-size * ($collum-number - 1))) / $collum-
+  outline: 1px solid #eeeeee;
+
+  margin-right: $double-gatter-size;
+  margin-bottom: $double-gatter-size;
+}
+
+.examples-list-link {
+  transition: box-shadow $animation-function-and-duration;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .exemples-image-overlay,
+  &:focus .exemples-image-overlay {
+    transform: translateY(0);
+  }
+}
+
+.examples-list-image {
+  width: 100%;
+}
+
+.examples-list-text-container {
+  padding: 20px 24px;
+
+  border-top: none;
+}
+.examples-list-title {
+  margin-bottom: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.examples-list-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.examples-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.exemples-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform $animation-function-and-duration;
+}

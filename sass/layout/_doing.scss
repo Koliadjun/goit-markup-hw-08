@@ -1,0 +1,30 @@
+/* == What we do styles == */
+.doing-list {
+  @extend %dis-flex;
+}
+.doing-list-item {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  &:not(:last-child) {
+    margin-right: $double-gatter-size;
+  }
+}
+.doing-list-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  line-height: 1.142;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  min-height: 70px;
+
+  width: 100%;
+}

@@ -1,0 +1,30 @@
+.social-list {
+  @extend %dis-flex;
+}
+.social-list-item {
+  width: 44px;
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: background-color $animation-function-and-duration,
+    color $animation-function-and-duration;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  color: #ffffff;
+  background-color: $active-link-color;
+}
+.social-list-icon {
+  fill: currentColor;
+}

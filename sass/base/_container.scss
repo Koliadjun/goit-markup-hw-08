@@ -1,0 +1,16 @@
+.container {
+  max-width: $containet-max-width; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: $gatter-size; /* 3 */
+  padding-right: $gatter-size; /* 3 */
+  // width: 100%; /* 1 */
+}
+.header .container {
+  @extend %dis-flex;
+  align-items: center;
+}
+.footer .container {
+  @extend %dis-flex;
+  align-items: baseline;
+}

@@ -1,0 +1,13 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $backdrop-bg-color;
+  transition: transform $animation-function-and-duration,
+    opacity $animation-function-and-duration,
+    visibility $animation-function-and-duration;
+  transform: translateY(0);
+}

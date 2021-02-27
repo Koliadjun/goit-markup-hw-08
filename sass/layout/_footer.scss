@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  color: $dark-background-text-color;
+  background-color: $dark-background-color;
+  padding: 60px 0;
+}
+
+.footer-address {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-address-link {
+  margin-bottom: 10px;
+}
+.footer-list-item {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.footer-list-link {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $animation-function-and-duration;
+
+  &:focus,
+  &:hover {
+    color: $active-link-color;
+  }
+}
+
+.address-container {
+  margin-right: 70px;
+}
+.dark-theme {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.footer-sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.subscribe-conteinet {
+  margin-left: auto;
+}
+
+.subscribe-form-label {
+  display: flex;
+}
+.subscribe-form-input {
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 16px 15px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.subscribe-form-button {
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons/send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
