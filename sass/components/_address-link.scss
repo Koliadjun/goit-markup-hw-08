@@ -1,15 +1,6 @@
-.address-list {
-  @extend %dis-flex;
-  margin-left: auto;
-}
-.address-item:not(:last-child) {
-  margin-right: 50px;
-}
 .address-link {
-  padding: 32px 0;
   font-weight: 500;
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: color $animation-function-and-duration;
   &:hover,
@@ -22,4 +13,34 @@
 }
 .address-link-icon {
   fill: currentColor;
+}
+
+@media screen and (max-width: 767px) {
+  .header .address-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-list {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .address-list {
+    display: flex;
+  }
+  .address-link {
+    padding: 32px 0;
+    justify-content: center;
+  }
 }
