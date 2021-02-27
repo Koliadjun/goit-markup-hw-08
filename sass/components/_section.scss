@@ -2,8 +2,14 @@
   padding: $section-padding 0;
 }
 .hero.section {
-  padding: 200px 0;
+  padding: 118px 0;
 }
+@media screen and (min-width: 1200px) {
+  .hero.section {
+    padding: 200px 0;
+  }
+}
+
 .doing.section {
   padding-top: 0;
 }
