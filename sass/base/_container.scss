@@ -31,7 +31,17 @@
   @extend %dis-flex;
   align-items: center;
 }
-.footer .container {
-  @extend %dis-flex;
-  align-items: baseline;
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    flex-wrap: nowrap;
+  }
 }

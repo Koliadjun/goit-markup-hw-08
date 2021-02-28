@@ -23,6 +23,7 @@
 .footer-list-link {
   color: rgba(255, 255, 255, 0.6);
   transition: color $animation-function-and-duration;
+  width: 100%;
 
   &:focus,
   &:hover {
@@ -30,10 +31,7 @@
   }
 }
 
-.address-container {
-  margin-right: 70px;
-}
-.dark-theme {
+.social-list-link.dark-theme {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
@@ -46,21 +44,30 @@
   margin-bottom: 20px;
   color: #ffffff;
 }
-.subscribe-conteinet {
-  margin-left: auto;
+.subscribe-conteiner,
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: 100%;
 }
-
+@media screen and (min-width: 480px) {
+  .subscribe-form {
+    width: 100%;
+  }
+}
 .subscribe-form-label {
   display: flex;
+  margin-bottom: 20px;
+  width: 100%;
 }
 .subscribe-form-input {
-  width: 358px;
-
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 10px;
+
   background-color: transparent;
   color: #ffffff;
   padding: 16px 15px;
@@ -77,15 +84,51 @@
 .subscribe-form-button {
   display: flex;
   align-items: center;
+  width: 200px;
 
   &::after {
     content: "";
-    margin-left: 10px;
+    // margin-left: 10px;
     width: 24px;
     height: 24px;
     background-image: url(../images/icons/send.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+}
+@media screen and (min-width: 480px) {
+  .address-container,
+  .social-link-container {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form-label {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .social-link-container {
+    margin: 0;
+  }
+
+  .subscribe-conteiner {
+    margin-left: auto;
+    align-items: flex-start;
+  }
+  .subscribe-form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribe-form-label {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 }

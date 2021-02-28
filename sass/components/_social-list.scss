@@ -1,5 +1,6 @@
 .social-list {
   @extend %dis-flex;
+  justify-content: center;
 }
 .social-list-item {
   width: 44px;
