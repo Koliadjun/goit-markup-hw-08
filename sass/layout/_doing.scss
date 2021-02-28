@@ -1,4 +1,9 @@
 /* == What we do styles == */
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
+}
 .doing-list {
   @extend %dis-flex;
 }
