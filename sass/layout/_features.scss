@@ -1,25 +1,21 @@
 .features-list {
-  @extend %dis-flex;
+  display: block;
 }
 .features-list-title {
   font-weight: 700;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   font-size: inherit;
   margin-bottom: 10px;
 }
-.features-list-item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: $double-gatter-size;
-  }
-}
+
 .features-list-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
@@ -32,4 +28,28 @@
 .features-list-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 767px) {
+  .features-list-item {
+    margin-bottom: $double-gatter-size;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $gatter-size * -1;
+
+    // margin-bottom: $double-gatter-size * -1;
+  }
+  .features-list-item {
+    @include getWidth($collum-number-tablet, $double-gatter-size);
+    margin: $gatter-size;
+    // margin-bottom: $double-gatter-size;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list-item {
+    @include getWidth($features-collum-number-desktop, $double-gatter-size);
+  }
 }
