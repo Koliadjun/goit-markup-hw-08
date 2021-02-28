@@ -897,15 +897,14 @@ p {
 
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .partners-list-item {
-  width: 170px;
+  width: 100%;
   height: 90px;
-}
-
-.partners-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin: 15px;
 }
 
 .partners-list-link {
@@ -927,6 +926,24 @@ p {
 
 .partners-list-icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 480px) {
+  .partners-list-item {
+    width: calc((100% - (30px * (2))) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .partners-list-item {
+    width: calc((100% - (30px * (3))) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partners-list-item {
+    width: calc((100% - (30px * (6))) / 6);
+  }
 }
 
 .footer {
