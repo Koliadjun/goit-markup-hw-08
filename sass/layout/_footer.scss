@@ -51,11 +51,10 @@
   align-items: center;
   // width: 100%;
 }
-@media screen and (min-width: 480px) {
-  .subscribe-form {
-    width: 100%;
-  }
+.subscribe-form {
+  width: 100%;
 }
+
 .subscribe-form-label {
   display: flex;
   margin-bottom: 20px;
@@ -97,12 +96,11 @@
     background-size: contain;
   }
 }
-@media screen and (min-width: 480px) {
-  .address-container,
-  .social-link-container {
-    margin-bottom: 60px;
-    text-align: center;
-  }
+
+.address-container,
+.social-link-container {
+  margin-bottom: 60px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .subscribe-form-label {

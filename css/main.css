@@ -512,12 +512,23 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  overflow: scroll;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal-close-button {
@@ -617,6 +628,13 @@ p {
   justify-content: center;
   margin-bottom: 30px;
   align-items: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-agriment-wrapper {
+    display: block;
+  }
 }
 
 .modal-form-agriment {
@@ -625,6 +643,12 @@ p {
 
 .modal-form-agriment-link {
   color: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form-agriment-link {
+    margin-left: 26px;
+  }
 }
 
 .modal-form-agriment-label {
@@ -1016,10 +1040,8 @@ p {
   align-items: center;
 }
 
-@media screen and (min-width: 480px) {
-  .subscribe-form {
-    width: 100%;
-  }
+.subscribe-form {
+  width: 100%;
 }
 
 .subscribe-form-label {
@@ -1062,12 +1084,10 @@ p {
   background-size: contain;
 }
 
-@media screen and (min-width: 480px) {
-  .address-container,
-  .social-link-container {
-    margin-bottom: 60px;
-    text-align: center;
-  }
+.address-container,
+.social-link-container {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
