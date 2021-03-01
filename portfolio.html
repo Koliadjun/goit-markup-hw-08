@@ -11,6 +11,11 @@
     <!--Шапка сайта-->
     <header class="header">
       <div class="container">
+        <button class="menu-button" data-menu-button>
+          <svg class="burger-menu-icon">
+            <use href="./images/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header-navigation">
           <a class="logo logo-header" href="./index.html">
             <span class="logo-first-word">Web</span>
@@ -784,5 +789,51 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-menu>
+      <div class="burger-menu">
+        <button class="burger-menu-close-button" data-menu-close>
+          <svg class="burger-menu-icon">
+            <use href="./images/icons/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="burger-menu-list">
+          <li class="burger-menu-list-item">
+            <a class="burger-menu-list-link" href="./index.html"> Студия </a>
+          </li>
+          <li class="burger-menu-list-item">
+            <a
+              class="burger-menu-list-link burger-menu-list-link-active"
+              href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="burger-menu-list-item">
+            <a class="burger-menu-list-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="burger-menu-tel" href="tel:+380961111111">
+          +38 096 111 11 11
+        </a>
+        <a class="burger-menu-email" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+        <ul class="burger-menu-social-list">
+          <li class="burger-menu-social-list-item">
+            <a href="#" class="burger-menu-social-link">Instagram</a>
+          </li>
+          <li class="burger-menu-social-list-item">
+            <a href="#" class="burger-menu-social-link">Twitter</a>
+          </li>
+          <li class="burger-menu-social-list-item">
+            <a href="#" class="burger-menu-social-link">Facebook</a>
+          </li>
+          <li class="burger-menu-social-list-item">
+            <a href="#" class="burger-menu-social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
