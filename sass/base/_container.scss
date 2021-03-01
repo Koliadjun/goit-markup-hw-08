@@ -5,13 +5,8 @@
   padding-left: $gatter-size; /* 3 */
   padding-right: $gatter-size; /* 3 */
   outline: 1px solid olive;
-  // width: 100%; /* 1 */
 }
-@media screen and (max-width: 480px) {
-  .container {
-    min-width: 320px;
-  }
-}
+
 @media screen and (min-width: 480px) {
   .container {
     width: $containet-mobile-width;

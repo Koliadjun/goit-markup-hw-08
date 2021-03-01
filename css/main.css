@@ -285,12 +285,6 @@ p {
   outline: 1px solid olive;
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    min-width: 320px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -1121,8 +1115,19 @@ p {
 
 /* == examples section ==*/
 .examples-filter {
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.examples-filter-item {
+  margin-bottom: 15px;
 }
 
 .examples-filter-item:not(:last-child) {
@@ -1156,10 +1161,22 @@ p {
 }
 
 .examples-list-item {
-  width: calc((100% - (30px * (4))) / 4);
+  width: calc((100% - (30px * (1))) / 1);
   outline: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-list-item {
+    width: calc((100% - (30px * (2))) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples-list-item {
+    width: calc((100% - (30px * (3))) / 3);
+  }
 }
 
 .examples-list-link {

@@ -6,12 +6,18 @@
   margin-bottom: $double-gatter-size * -1;
 }
 .examples-list-item {
-  @include getWidth($collum-number-desktop, $double-gatter-size);
-  //   (100% - ($double-gatter-size * ($collum-number - 1))) / $collum-
+  @include getWidth($examples-collum-number-mobile, $double-gatter-size);
+
   outline: 1px solid #eeeeee;
 
   margin-right: $double-gatter-size;
   margin-bottom: $double-gatter-size;
+  @media screen and (min-width: 768px) {
+    @include getWidth($examples-collum-number-tablet, $double-gatter-size);
+  }
+  @media screen and (min-width: 1200px) {
+    @include getWidth($examples-collum-number-desktop, $double-gatter-size);
+  }
 }
 
 .examples-list-link {
