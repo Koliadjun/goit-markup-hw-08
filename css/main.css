@@ -618,6 +618,7 @@ p {
 
 .modal-agriment-wrapper {
   display: flex;
+  position: relative;
   justify-content: center;
   margin-bottom: 30px;
   align-items: center;
@@ -636,9 +637,18 @@ p {
 
 .modal-form-agriment-link {
   color: #2196f3;
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 328px) {
+  .modal-form-agriment-link {
+    position: absolute;
+    bottom: 3px;
+    right: 49px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .modal-form-agriment-link {
     margin-left: 26px;
   }
