@@ -874,7 +874,7 @@ p {
   text-align: center;
   background-size: cover;
   background-position: center;
-  min-height: 400px;
+  height: 400px;
   margin: 0 auto;
 }
 
@@ -887,6 +887,12 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 479px) {
+  .hero-title {
+    font-size: 21px;
+  }
 }
 
 @media screen and (min-width: 768px) {
