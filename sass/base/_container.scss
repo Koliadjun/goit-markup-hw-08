@@ -24,6 +24,7 @@
 .header .container {
   @extend %dis-flex;
   align-items: center;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
