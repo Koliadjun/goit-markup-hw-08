@@ -31,25 +31,25 @@
 }
 @media screen and (max-width: 767px) {
   .features-list-item {
-    margin-bottom: $double-gatter-size;
+    margin-bottom: $double-gutter-size;
   }
 }
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
-    margin: $gatter-size * -1;
+    margin: $gutter-size * -1;
 
-    // margin-bottom: $double-gatter-size * -1;
+    // margin-bottom: $double-gutter-size * -1;
   }
   .features-list-item {
-    @include getWidth($collum-number-tablet, $double-gatter-size);
-    margin: $gatter-size;
-    // margin-bottom: $double-gatter-size;
+    @include getWidth($collum-number-tablet, $double-gutter-size);
+    margin: $gutter-size;
+    // margin-bottom: $double-gutter-size;
   }
 }
 @media screen and (min-width: 1200px) {
   .features-list-item {
-    @include getWidth($collum-number-desktop, $double-gatter-size);
+    @include getWidth($collum-number-desktop, $double-gutter-size);
   }
 }

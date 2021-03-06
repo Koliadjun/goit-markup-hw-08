@@ -1,22 +1,22 @@
 .examples-list {
   @extend %dis-flex;
   flex-wrap: wrap;
-  margin-right: $double-gatter-size * -1;
+  margin-right: $double-gutter-size * -1;
 
-  margin-bottom: $double-gatter-size * -1;
+  margin-bottom: $double-gutter-size * -1;
 }
 .examples-list-item {
-  @include getWidth($examples-collum-number-mobile, $double-gatter-size);
+  @include getWidth($examples-collum-number-mobile, $double-gutter-size);
 
   outline: 1px solid #eeeeee;
 
-  margin-right: $double-gatter-size;
-  margin-bottom: $double-gatter-size;
+  margin-right: $double-gutter-size;
+  margin-bottom: $double-gutter-size;
   @media screen and (min-width: 768px) {
-    @include getWidth($examples-collum-number-tablet, $double-gatter-size);
+    @include getWidth($examples-collum-number-tablet, $double-gutter-size);
   }
   @media screen and (min-width: 1200px) {
-    @include getWidth($examples-collum-number-desktop, $double-gatter-size);
+    @include getWidth($examples-collum-number-desktop, $double-gutter-size);
   }
 }
 

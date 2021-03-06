@@ -4,7 +4,7 @@
 
 .team-list {
   font-size: 16px;
-  margin: $gatter-size * -1;
+  margin: $gutter-size * -1;
 }
 .team-list-title {
   font-size: inherit;
@@ -19,7 +19,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  margin: $gatter-size;
+  margin: $gutter-size;
 }
 
 .team-list-text {
@@ -28,7 +28,7 @@
 
 .team-list-text-container {
   text-align: center;
-  padding: $double-gatter-size;
+  padding: $double-gutter-size;
 }
 @media screen and (min-width: 768px) {
   .team-list {
@@ -36,11 +36,11 @@
     flex-wrap: wrap;
   }
   .team-list-item {
-    @include getWidth($collum-number-tablet, $double-gatter-size);
+    @include getWidth($collum-number-tablet, $double-gutter-size);
   }
 }
 @media screen and (min-width: 1200px) {
   .team-list-item {
-    @include getWidth($collum-number-desktop, $double-gatter-size);
+    @include getWidth($collum-number-desktop, $double-gutter-size);
   }
 }

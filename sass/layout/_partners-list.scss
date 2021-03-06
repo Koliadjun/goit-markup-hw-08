@@ -1,13 +1,13 @@
 .partners-list {
   display: flex;
   flex-wrap: wrap;
-  margin: $gatter-size * -1;
+  margin: $gutter-size * -1;
 }
 
 .partners-list-item {
   width: 100%;
   height: 90px;
-  margin: $gatter-size;
+  margin: $gutter-size;
 }
 .partners-list-link {
   display: flex;
@@ -32,16 +32,16 @@
 }
 @media screen and (min-width: 480px) {
   .partners-list-item {
-    @include getWidth($partners-collum-number-mobile, $double-gatter-size);
+    @include getWidth($partners-collum-number-mobile, $double-gutter-size);
   }
 }
 @media screen and (min-width: 768px) {
   .partners-list-item {
-    @include getWidth($partners-collum-number-tablet, $double-gatter-size);
+    @include getWidth($partners-collum-number-tablet, $double-gutter-size);
   }
 }
 @media screen and (min-width: 1200px) {
   .partners-list-item {
-    @include getWidth($partners-collum-number-desktop, $double-gatter-size);
+    @include getWidth($partners-collum-number-desktop, $double-gutter-size);
   }
 }
