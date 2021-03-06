@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title lang="en">WebStudio</title>
   </head>
@@ -10,7 +11,7 @@
     <!--Шапка сайта-->
     <header class="header">
       <div class="container">
-        <button class="menu-button" data-menu-button>
+        <button class="menu-button" data-menu-button data-aos="flip-left">
           <svg class="burger-menu-icon">
             <use href="./images/icons/sprite.svg#icon-menu"></use>
           </svg>
@@ -77,7 +78,7 @@
         <div class="container">
           <h2 class="section-title visually-hidden">Наши особенности</h2>
           <ul class="features-list">
-            <li class="features-list-item">
+            <li class="features-list-item" data-aos="zoom-out-up">
               <div class="features-list-icon">
                 <svg class="icon">
                   <use href="./images/icons/sprite.svg#icon-antenna"></use>
@@ -89,7 +90,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="features-list-item" data-aos="zoom-out-up">
               <div class="features-list-icon">
                 <svg class="icon">
                   <use href="./images/icons/sprite.svg#icon-clock"></use>
@@ -101,7 +102,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="features-list-item" data-aos="zoom-out-up">
               <div class="features-list-icon">
                 <svg class="icon">
                   <use href="./images/icons/sprite.svg#icon-diagram"></use>
@@ -113,7 +114,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="features-list-item" data-aos="zoom-out-up">
               <div class="features-list-icon">
                 <svg class="icon">
                   <use href="./images/icons/sprite.svg#icon-astronaut"></use>
@@ -133,7 +134,13 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="doing-list display-flex">
-            <li class="doing-list-item">
+            <li
+              class="doing-list-item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="0"
+              data-aos-offset="0"
+            >
               <picture>
                 <source
                   srcset="
@@ -160,7 +167,13 @@
 
               <p class="doing-list-text">Десктопные приложения</p>
             </li>
-            <li class="doing-list-item">
+            <li
+              class="doing-list-item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
               <picture>
                 <source
                   srcset="
@@ -187,7 +200,13 @@
 
               <p class="doing-list-text">Мобильные приложения</p>
             </li>
-            <li class="doing-list-item">
+            <li
+              class="doing-list-item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="600"
+              data-aos-offset="0"
+            >
               <picture>
                 <source
                   srcset="
@@ -222,7 +241,13 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-list-item">
+            <li
+              class="team-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <source
                   srcset="
@@ -311,7 +336,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li
+              class="team-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <source
                   srcset="
@@ -400,7 +430,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li
+              class="team-list-item"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <source
                   srcset="
@@ -489,7 +524,13 @@
                 </ul>
               </div>
             </li>
-            <li class="team-list-item">
+            <li
+              class="team-list-item"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-sine"
+            >
               <picture>
                 <source
                   srcset="
@@ -586,7 +627,12 @@
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="partners-list">
-            <li class="partners-list-item">
+            <li
+              class="partners-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a href="" class="partners-list-link">
                 <svg class="partners-list-icon" width="45" height="50">
                   <use
@@ -595,7 +641,13 @@
                 </svg>
               </a>
             </li>
-            <li class="partners-list-item">
+            <li
+              class="partners-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-sine"
+            >
               <a href="" class="partners-list-link">
                 <svg class="partners-list-icon" width="40" height="52">
                   <use
@@ -604,7 +656,13 @@
                 </svg>
               </a>
             </li>
-            <li class="partners-list-item">
+            <li
+              class="partners-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-delay="600"
+              data-aos-easing="ease-in-sine"
+            >
               <a href="" class="partners-list-link">
                 <svg class="partners-list-icon" width="41" height="43">
                   <use
@@ -613,7 +671,13 @@
                 </svg>
               </a>
             </li>
-            <li class="partners-list-item">
+            <li
+              class="partners-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-delay="900"
+              data-aos-easing="ease-in-sine"
+            >
               <a href="" class="partners-list-link">
                 <svg class="partners-list-icon" width="80" height="42">
                   <use
@@ -622,7 +686,13 @@
                 </svg>
               </a>
             </li>
-            <li class="partners-list-item">
+            <li
+              class="partners-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-delay="1200"
+              data-aos-easing="ease-in-sine"
+            >
               <a href="" class="partners-list-link">
                 <svg class="partners-list-icon" width="59" height="47">
                   <use
@@ -631,7 +701,13 @@
                 </svg>
               </a>
             </li>
-            <li class="partners-list-item">
+            <li
+              class="partners-list-item"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-delay="1500"
+              data-aos-easing="ease-in-sine"
+            >
               <a href="" class="partners-list-link">
                 <svg class="partners-list-icon" width="89" height="46">
                   <use
@@ -850,5 +926,9 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
