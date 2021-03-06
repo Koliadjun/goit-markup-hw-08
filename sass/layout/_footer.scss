@@ -31,9 +31,12 @@
   }
 }
 
-.social-list-link.dark-theme {
+.social-list-link .dark-theme {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+  &:focus {
+    background-color: rgb(235, 17, 17);
+  }
 }
 .footer-sub-title {
   font-weight: 700;
@@ -44,7 +47,7 @@
   margin-bottom: 20px;
   color: #ffffff;
 }
-.subscribe-conteiner,
+.subscribe-container,
 .subscribe-form {
   display: flex;
   flex-direction: column;
@@ -116,7 +119,7 @@
     margin: 0;
   }
 
-  .subscribe-conteiner {
+  .subscribe-container {
     margin-left: auto;
     align-items: flex-start;
   }
